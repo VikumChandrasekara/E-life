@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+body{
+    margin: 3%;
+    padding: 0;
+    background: url(../images/imgd.jpg);
+    background-size: cover;
+    font-family: sans-serif;
+    text-align: justify;
+    width: 100%;
+    height: auto;
+    font: 15px/1.5 "Ubuntu",sans-serif;
+}
+
+.head
+{
+    background-color: darkblue;
+}
+
+.box{
+    position: relative;
+    top: 25%;
+    left: 25%;
+    width: 50%;
+    height: 50%
+    bottom: 25%;
+    padding: 35px;
+    background: rgb(0,0,0,.8);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.5);
+    border-radius: 10px;
+    margin: 30px;
+    pointer-events: visibleFill;
+    
+}
+
+.box h2
+{
+    margin: 0;
+    padding: 0;
+    color: azure;
+    text-align: center;
+}
+
+.box .inbox 
+{
+    position: relative;
+    
+}
+
+.box .inbox input
+{
+    width: 40%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #ffff;
+    margin-bottom: 30px;
+    border: none;
+    outline: none;
+    background: transparent;
+    border: 1px solid #ffff;
+    width: 100%;
+    
+}
+
+.box .inbox label 
+
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #ffff;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.box inbox input:focus ~ label,
+.box inbox input:valid ~ label
+{
+    top : -18px;
+    left: 0;
+    color: #03a9f4;
+    font-size: 12px;
+}
+
+.box input[type = "submit"]
+{
+    border: transparent;
+    border: none;
+    outline: #ffff;
+    background-color:#0077b3;
+    padding: 10px 20px;
+}
+
+.box h1
+{
+    color: white;
+    text-align: center;
+}
+header{
+	background: #0D586A;
+	color:#ffffff;
+	z-index: 10;
+	min-height: 70px;
+	border-bottom: #dd3822 5px solid;
+	width: 100%;
+
+
+}
+ul{
+	margin:0;
+	padding: 0;
+}
+
+
+/* Local*/
+header a{
+	color:white;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 20px; 
+}
+
+header li{
+	display: inline-block;
+	padding: 0 20px 0 20px;
+}
+header #branding{
+	float: left;
+	font-size: 20px;
+	
+}
+header #branding h1{
+	margin: 0;
+	
+}
+header nav{
+	float: right;
+	margin-top: -40px;
+	font-weight: bold;
+}
+header .highlight{
+	color: #dd3822;
+	font-weight: bolder;
+	letter-spacing: -3px;
+}
+header .current a{
+	color:#ff8473;
+	font-weight: bold;
+	font-size:px;
+}
+header a:hover{
+	color: #ff8473;
+	border-top:#ff8473 3px solid;
+	transition: 500ms;
+}
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+body{
+	
+	font: 15px/1.5 "Ubuntu",sans-serif;
+	padding: 0;
+	margin: 0;
+	background-color: #f4f4f4; 
+
+}
+
+
+
+/*Global*/
+.container{
+	width: 80%;
+	margin:auto;
+	overflow: hidden;
+}
+footer{
+	border-top: #dd3822 5px solid;
+	position: relative;
+	padding: 20px;
+	padding-top: 20px;
+	color: white;
+	background-color: #0D586A;
+	text-align: center; 
+}
+
+
+ul.breadcrumb {
+    float: left;
+    padding: 10px 16px;
+    list-style: none;
+   
+}
+ul.breadcrumb li {
+    display: inline;
+    font-size: 15px;
+}
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+}
+ul.breadcrumb li a {
+    color: white;
+    text-decoration: none;
+}
+ul.breadcrumb li a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+ul.breadcrumb2 {
+    float: right;
+    padding: 10px 16px;
+    list-style: none;
+   
+}
+ul.breadcrumb2 li {
+    display: inline;
+    font-size: 15px;
+}
+ul.breadcrumb2 li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+}
+ul.breadcrumb2 li a {
+    color: white;
+    text-decoration: none;
+}
+ul.breadcrumb2 li a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.foll
+{
+    margin-right: 20px;
+
+}

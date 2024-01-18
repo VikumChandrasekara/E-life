@@ -1,0 +1,605 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+body{
+	
+	font: 15px/1.5 "Ubuntu",sans-serif;
+	padding: 0;
+	margin: 0;
+	background-color: #f4f4f4; 
+
+}
+
+/*Global*/
+.container{
+	width: 80%;
+	margin:auto;
+	overflow: hidden;
+}
+header{
+	background: #0D586A;
+	color:#ffffff;
+	z-index: 10;
+	min-height: 70px;
+	border-bottom: #dd3822 5px solid;
+	
+	width: 100%;
+}
+ul{
+	margin:0;
+	padding: 0;
+}
+.dark{
+	padding: 15px;
+	background: #35424a; 
+	color: #ffffff;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+/* Local*/
+header a{
+	color:white;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 20px; 
+}
+
+header li{
+	display: inline-block;
+	padding: 0 20px 0 20px;
+}
+header #branding{
+	float: left;
+	font-size: 20px;
+	
+}
+header #branding h1{
+	margin: 0;
+	margin-top: 10px;
+}
+header nav{
+	float: right;
+	margin-top: -50px;
+	font-weight: bold;
+}
+header .highlight{
+	color: #dd3822;
+	font-weight: bolder;
+	letter-spacing: -3px;
+}
+header .current a{
+	color:#ff8473;
+	font-weight: bold;
+	font-size:px;
+}
+header a:hover{
+	color: #ff8473;
+	border-top:#ff8473 3px solid;
+	transition: 500ms;
+}
+/*Showcase*/
+#showcase{
+	min-height: 700px;
+	background: url("../images/rawpixel-577480-unsplash.jpg") no-repeat 0 ;
+	background-size: 1600px;
+	text-align: center;
+
+	
+}
+#showcase h1{
+
+	margin-top: 550px;
+	font-size: 55px;
+	margin-bottom: 10px;
+}
+#showcase p{
+	font-weight: bold;
+	font-size: 20px;
+}
+
+
+/*Newsletter*/
+#newsletter{
+	border-top: #dd3822 5px solid;
+	padding-top: 15px;
+	color: white;
+	background:#0D586A;
+	border-bottom:#dd3822 5px solid;
+	width: 100%;
+	position: relative;
+	
+	
+}
+#newsletter h1{
+	float: left;
+	 margin-top: 10px;
+}
+#newsletter form{
+	float: right;
+	margin-top: 10px; 
+}
+#newsletter input[type="email"]{
+	padding: 4px;
+	height: 25px;
+	width: 250px; 
+}
+
+/*Boxes*/
+
+#boxes{
+	
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 20px;
+}
+#boxes .box{
+	margin-left: -7px;
+	float: left;
+	width: 30%;
+	padding: 20px;
+	text-align: center;
+	
+}
+#boxes .box:hover{
+	background-color: #adced6;
+	border-radius:25px;
+	padding:20px;
+}
+#boxes .box img{
+	width:90px;
+
+}
+
+
+footer{
+	border-top: #dd3822 5px solid;
+	position: relative;
+	padding: 20px;
+	padding-top: 20px;
+	color: white;
+	background-color: #0D586A;
+	text-align: center; 
+}
+
+/*Button*/
+.button{
+	text-decoration: none;
+	color:black;
+
+}
+.button:hover{
+	color: #dd3822;
+	transition: 500ms;
+	
+
+}
+aside#sidebar{
+	float: right;
+	width: 30%;
+	margin-top: 10px;
+}
+
+/*main-col*/
+article#main-col{
+	float: left;
+	width: 65%;
+}
+
+/*contact */
+.banner-contact p{
+	color: white;
+}
+.banner-contact h2{
+	color: white;
+}
+.banner-contact h1{
+	text-align: center;
+	font-size: 30pt;
+}
+#boxes .box2{
+	margin-left: -7px;
+	float: left;
+	width: 30%;
+	padding: 20px;
+	text-align: center;
+}
+.svg-box{
+	background-color: #dd3822;
+	padding: 10px;
+	width: 100px;
+	height: 100px;
+	display: inline-block;
+	border-radius: 50%;
+	position: relative;
+}
+.svg-box:hover{
+	transition: background-color 0.5s ease;
+	background-color: #0D586A;
+
+}
+.svg-box svg{
+	position:absolute; /*it can be fixed too*/
+        left:0; right:0;
+        top:0; bottom:0;
+        margin:auto;
+
+        /*this to solve "the content will not be cut when the window is smaller than the content": */
+        max-width:100%;
+        max-height:100%;
+        overflow:auto;
+}
+.parallax-contact {
+    /* The image used */
+    background-image: url('../images/contact.jpg');
+
+    /* Full height */
+    height: 100%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.overlay{
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    color: #f1f1f1; /* Grey text */
+    width: 100%; /* Full width */
+    margin-top: -20px;
+    
+
+}
+.right-col{
+	float: right;
+	width: 50%;
+}
+
+/*main-col*/
+.left-col{
+	float: left;
+	width: 50%;
+}
+.left-col h1{
+	font-size: 25pt;
+}
+
+.container-form input[type=text],input[type=number],input[type=email], select, textarea,input[type=file] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+.container-form input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.container-form input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+#contact-form .container-form {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+#contact-form{
+	padding-bottom: 25px;
+}
+
+/*career*/
+#career-top{
+	padding-top: 30px; background-color: white;
+	text-align: left;
+	/* The image used */
+    background-image: url('../images/careerp.jpg');
+
+    /* Full height */
+    height: 100%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#career-top img{
+	width: 100%;
+}
+#career-mid{
+	padding: 50px;
+}
+#career-mid h1,h3,p{
+	text-align: center;
+}
+
+#career-mid > .container{
+	width: 60%;
+	margin:auto;
+	overflow: hidden;
+}
+#career-low{
+	padding: 50px; background-color: white;
+	text-align: center;
+	
+}
+#career-lower{
+	text-align: center;
+	padding: 50px;
+}
+/*reports*/
+#lap-top{
+	padding-top: 30px; background-color: white;
+	text-align: left;
+	/* The image used */
+    background-image: url('../images/labwall.jpg');
+
+    /* Full height */
+    height: 100%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#lap-top h1{
+	text-align: center;
+}
+#lap-top .wrapper{
+	width: 80%
+	height: 200px;
+	margin: auto;
+}
+#lap-top .button {
+  display: inline-block;
+  border-radius: 4px;
+  background: rgba(50, 90, 150, 0.3);
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 10px;
+  width: 260px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+#lap-top .button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+#lap-top .button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+#lap-top .button:hover span {
+  padding-right: 25px;
+}
+
+#lap-top .button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+#recommended-test button{
+	display: inline-block;
+  border-radius: 4px;
+  background-color: #0D586A;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 14px;
+  padding: 10px;
+  width: 100%;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+#recommended-test .button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+#recommended-test .button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+#recommended-test .button:hover span {
+  padding-right: 25px;
+}
+
+#recommended-test .button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+/*test search*/
+.test-search-box{
+	width: 80%;
+	background-color: #009999;
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	color: floralwhite;
+	padding: 20px;
+    
+}
+.test-search-box tr{
+	height: 100px;
+    
+     
+}
+.test-search-box td{
+	text-align: left;
+   
+}
+.test-search-box table{
+	width: 110%;
+    padding-left: 110px;
+    
+    
+}
+.test-search-box h1{
+	text-align: center;
+}
+.test-search-box button{
+	display: inline-block;
+  border-radius: 4px;
+  background: #003333;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 10px;
+  width: 100%;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+
+}
+/*model*/
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    /*padding-top: 100px;  Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    
+    margin: auto;
+    border: 1px solid #888;
+    width: 60%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #0D586A;
+    color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #0D586A;
+    color: white;
+    height: 30px;
+}
+
+ul.breadcrumb1 {
+    float: left;
+    padding: 10px 16px;
+    list-style: none;
+   
+}
+ul.breadcrumb1 li {
+    display: inline;
+    font-size: 15px;
+}
+ul.breadcrumb1 li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+}
+ul.breadcrumb1 li a {
+    color: white;
+    text-decoration: none;
+}
+ul.breadcrumb1 li a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+ul.breadcrumb2 {
+    float: right;
+    padding: 10px 16px;
+    list-style: none;
+   
+}
+ul.breadcrumb2 li {
+    display: inline;
+    font-size: 15px;
+}
+ul.breadcrumb2 li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+}
+ul.breadcrumb2 li a {
+    color: white;
+    text-decoration: none;
+}
+ul.breadcrumb2 li a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.foll
+{
+    margin-right: 20px;
+
+}
